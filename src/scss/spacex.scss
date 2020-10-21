@@ -1,0 +1,147 @@
+$purpleText: #6e77ad;
+$greyBackround: #e6e6e6;
+
+.main-containter {
+  background: $greyBackround;
+  display: flex;
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    justify-content: center;
+    a {
+      text-decoration: none;
+      p {
+        strong {
+          color: black;
+        }
+      }
+    }
+    h2 {
+      align-self: center;
+    }
+  }
+  .filter {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 20px;
+    border-radius: 10px;
+    background: #fff;
+    width: 150px;
+    margin: 10px;
+    max-height: 500px;
+    h3 {
+      margin: 0;
+    }
+    .filterSection {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      p {
+        margin: 10px 0px;
+        padding: 1px 0px;
+        border-bottom: 2px solid $greyBackround;
+      }
+    }
+    .active {
+      background: #7cba01;
+    }
+    button {
+      &:hover {
+        background: #7cba01;
+      }
+      background: #c6e09b;
+      border: none;
+      border-radius: 5px;
+      padding: 5px 15px;
+      font-size: 14px;
+      margin: 5px;
+    }
+    .buttonContainer {
+      display: flex;
+      flex-wrap: wrap;
+      min-width: 175px;
+      justify-content: space-between;
+    }
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 10px;
+    background: #fff;
+    width: 17%;
+    margin: 10px;
+    p {
+      margin: 0.5em 0;
+    }
+    ul {
+      margin: 0;
+    }
+    img {
+      height: 200px;
+      background: $greyBackround;
+    }
+    .missionName {
+      color: $purpleText;
+      font-weight: bold;
+    }
+  }
+  span {
+    color: $purpleText;
+  }
+}
+footer {
+  text-align: center;
+  padding: 30px;
+  background: $greyBackround;
+}
+header {
+  background: $greyBackround;
+  padding: 10px;
+  h1 {
+    margin: 0;
+  }
+}
+@media only screen and (min-width: 700px) and (max-width: 1024px) {
+  .main-containter {
+    .filter {
+      width: 21%;
+      max-height: 500px;
+      .buttonContainer {
+        min-width: 180px;
+      }
+    }
+    .card {
+      width: 37%;
+    }
+  }
+}
+@media only screen and (max-width: 700px) {
+  .main-containter {
+    flex-direction: column;
+    align-items: center;
+    .filter {
+      width: 75%;
+      .buttonContainer {
+        max-width: 213px;
+      }
+    }
+    .card-container {
+      h2 {
+        padding: 10px;
+        text-align: center;
+      }
+    }
+    .card {
+      width: 70%;
+    }
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .main-containter {
+    .card-container {
+      flex: 0.52;
+    }
+  }
+}
