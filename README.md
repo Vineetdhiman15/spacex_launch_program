@@ -1,4 +1,7 @@
- Used
+Heroku Link : https://spacex-launch-program-demo.herokuapp.com/
+
+
+Used
 1.	React with Redux for creating the SpaceX Launch Programs Application.
 2.	Redux-Thunk middleware for  API calls
 3.	Scss for styling the component.
